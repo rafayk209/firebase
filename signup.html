@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyA3n28AcxMYDVvTm3eerjWi8dvByF2JQ-I",
+          authDomain: "facebooklogin-f8ee7.firebaseapp.com",
+          databaseURL: "https://facebooklogin-f8ee7-default-rtdb.firebaseio.com",
+          projectId: "facebooklogin-f8ee7",
+          storageBucket: "facebooklogin-f8ee7.appspot.com",
+          messagingSenderId: "914418009367",
+          appId: "1:914418009367:web:2c38e49657025f2f5c6352"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+</head>
+<body>
+    
+    <input type="email" placeholder="email" id="email">
+    <input type="password" placeholder="password" id="password">
+    <button onclick="signup()" >signup</button>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
